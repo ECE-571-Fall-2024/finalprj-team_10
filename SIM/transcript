@@ -1,0 +1,97 @@
+# //  Questa Sim-64
+# //  Version 2024.2 linux_x86_64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 22:51:22 on Dec 05,2024
+# vlog -reportprogress 300 -lint -source top_module.sv 
+# -- Compiling module top_module
+# 
+# Top level modules:
+# 	top_module
+# End time: 22:51:23 on Dec 05,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 22:51:23 on Dec 05,2024
+# vlog -reportprogress 300 -lint -source functional_unit.sv 
+# -- Compiling module functional_unit
+# 
+# Top level modules:
+# 	functional_unit
+# End time: 22:51:23 on Dec 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 22:51:24 on Dec 05,2024
+# vlog -reportprogress 300 -lint -source i2c_interface.sv 
+# -- Compiling module i2c_interface
+# 
+# Top level modules:
+# 	i2c_interface
+# End time: 22:51:24 on Dec 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 22:51:24 on Dec 05,2024
+# vlog -reportprogress 300 -lint -source maintb.sv 
+# -- Compiling package random_value_pkg
+# -- Compiling module testbench_tb
+# -- Importing package random_value_pkg
+# 
+# Top level modules:
+# 	testbench_tb
+# End time: 22:51:25 on Dec 05,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 22:51:25 on Dec 05,2024
+# vlog -reportprogress 300 -lint -source memory.sv 
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+# End time: 22:51:25 on Dec 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 22:51:26 on Dec 05,2024
+# vlog -reportprogress 300 -lint -source memory_controller.sv 
+# -- Compiling module memory_controller
+# 
+# Top level modules:
+# 	memory_controller
+# End time: 22:51:26 on Dec 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.testbench_tb 
+# Start time: 22:51:27 on Dec 05,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.random_value_pkg(fast)
+# Loading work.testbench_tb(fast)
+# Loading work.top_module(fast)
+# Loading work.functional_unit(fast)
+# Loading work.i2c_interface(fast)
+# Loading work.memory_controller(fast)
+# Loading work.memory(fast)
+# m= 4, n= 3, sel= 7, addr=3a
+# Coverage for sel = 12.50 %
+# Time=                1164
+# Results of the functional unit:00000000
+# RW=1, Address : 0f, Data in the memory:00000000
+# m= 2, n= 0, sel= 4, addr=48
+# Time=                1980
+# Results of the functional unit:00001011
+# RW=1, Address : 14, Data in the memory:00000000
+# ** Note: $finish    : maintb.sv(150)
+#    Time: 2072 ns  Iteration: 0  Instance: /testbench_tb
+# 1
+# Break in Module testbench_tb at maintb.sv line 150

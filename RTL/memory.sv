@@ -7,7 +7,7 @@ module memory(CLK,RST,addr,data,RW_EN,data_read);
   input logic [7:0] data;
   output logic [7:0] data_read;
   
-  bit SDA_en=0;
+  bit SDA_EN=0;
   logic [7:0] mem[128];
   
   logic [7:0] addrin;
