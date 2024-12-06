@@ -11,7 +11,7 @@ module memory_controller(CLK,RST,ACK,SCL,SDA,addr,data,RW_EN,SDA_read,data_read)
   input wire [7:0] data_read;
   output bit RW_EN;
   //internal signals of memory-conroller
-  bit SDA_en;
+  bit SDA_EN;
   logic [7:0] addrin;
   logic [7:0] datain;
   logic [7:0] temprd;
@@ -30,20 +30,20 @@ STATE_type STATE;
           addrin<=1'b0;
           //data<=1'b0;
           RW_EN<=1'b0;
-          SDA_en<=1'b0;
+          SDA_EN<=1'b0;
         end
   // State machine for memory controller    
       else begin
         case(STATE)
           start:					
             begin
-              SDA_en<=1'b1;
+              SDA_EN<=1'b1;
               STATE <= store_addr;
             end
           
           store_addr:
             begin
-              SDA_en<=1'b1;
+              SDA_EN<=1'b1;
                @(posedge CLK);
               for(i=0;i<=7;i++) begin
                 @(posedge CLK);
@@ -59,11 +59,11 @@ STATE_type STATE;
             ACK <= 1'b1;
             if(RW_EN == 1'b1) begin
             STATE<=store_data;
-              SDA_en<=1'b1;
+              SDA_EN<=1'b1;
           end
             else begin
               STATE<=send_data;
-              SDA_en<=1'b0;
+              SDA_EN<=1'b0;
             end
           end
           
@@ -86,7 +86,7 @@ STATE_type STATE;
           
           stop:begin
             ACK <= 1'b0;
-            SDA_en <= 1'b1;
+            SDA_EN <= 1'b1;
             @(posedge CLK)
             @(posedge CLK)
             @(posedge CLK)
@@ -94,12 +94,12 @@ STATE_type STATE;
           end
           
           send_data:begin
-            SDA_en <= 1'b0;
+            SDA_EN <= 1'b0;
             for(i=0;i<=7;i++) begin
               sdar <= data_read[i];
             end
             STATE<=stop;
-            SDA_en <= 1'b1;
+            SDA_EN <= 1'b1;
           end
           
           default: STATE<=start;
@@ -110,12 +110,11 @@ STATE_type STATE;
     end
   
   assign addr = addrin[7:1];
-  assign SDA = (SDA_en == 1'b1) ? 1'bz : sdar;
+  assign SDA = (SDA_EN == 1'b1) ? 1'bz : sdar;
   assign SDA_read = sdar;
   assign data = (RW_EN == 1'b1) ? datain : 1'bz;
 
   
 
 endmodule
-
 
