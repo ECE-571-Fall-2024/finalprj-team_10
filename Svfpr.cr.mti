@@ -1,0 +1,45 @@
+/u/anveshch/ECE571-F24/finalprj-team_10/top_module.sv {1 {vlog -work work -vopt -sv -stats=none /u/anveshch/ECE571-F24/finalprj-team_10/top_module.sv
+QuestaSim-64 vlog 2021.3_1 Compiler 2021.08 Aug 15 2021
+-- Compiling module top_module
+
+Top level modules:
+	top_module
+
+} {} {}} /u/anveshch/ECE571-F24/finalprj-team_10/memory_controller.sv {1 {vlog -work work -vopt -sv -stats=none /u/anveshch/ECE571-F24/finalprj-team_10/memory_controller.sv
+QuestaSim-64 vlog 2021.3_1 Compiler 2021.08 Aug 15 2021
+-- Compiling module memory_controller
+
+Top level modules:
+	memory_controller
+
+} {} {}} /u/anveshch/ECE571-F24/finalprj-team_10/memory.sv {1 {vlog -work work -vopt -sv -stats=none /u/anveshch/ECE571-F24/finalprj-team_10/memory.sv
+QuestaSim-64 vlog 2021.3_1 Compiler 2021.08 Aug 15 2021
+-- Compiling module memory
+
+Top level modules:
+	memory
+
+} {} {}} /u/anveshch/ECE571-F24/finalprj-team_10/i2c_interface.sv {1 {vlog -work work -vopt -sv -stats=none /u/anveshch/ECE571-F24/finalprj-team_10/i2c_interface.sv
+QuestaSim-64 vlog 2021.3_1 Compiler 2021.08 Aug 15 2021
+-- Compiling module i2c_interface
+
+Top level modules:
+	i2c_interface
+
+} {} {}} /u/anveshch/ECE571-F24/finalprj-team_10/functional_unit.sv {1 {vlog -work work -vopt -sv -stats=none /u/anveshch/ECE571-F24/finalprj-team_10/functional_unit.sv
+QuestaSim-64 vlog 2021.3_1 Compiler 2021.08 Aug 15 2021
+-- Compiling module functional_unit
+
+Top level modules:
+	functional_unit
+
+} {} {}} /u/anveshch/ECE571-F24/finalprj-team_10/maintb.sv {1 {vlog -work work -vopt -sv -stats=none /u/anveshch/ECE571-F24/finalprj-team_10/maintb.sv
+QuestaSim-64 vlog 2021.3_1 Compiler 2021.08 Aug 15 2021
+-- Compiling package random_value_pkg
+-- Compiling module testbench_tb
+-- Importing package random_value_pkg
+
+Top level modules:
+	testbench_tb
+
+} {} {}}
