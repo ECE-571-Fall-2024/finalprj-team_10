@@ -1,0 +1,41 @@
+project open /u/anveshch/ECE571-F24/finalprj-team_10/prj1
+# Loading project prj1
+# Compile of functional_unit.sv was successful.
+# Compile of i2c_interface.sv was successful.
+# Compile of maintb.sv was successful.
+# Compile of memory.sv was successful.
+# Compile of memory_controller.sv was successful.
+# Compile of top_module.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.testbench_tb
+# vsim -voptargs="+acc" work.testbench_tb 
+# Start time: 23:46:02 on Dec 05,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading sv_std.std
+# Loading work.random_value_pkg(fast)
+# Loading work.testbench_tb(fast)
+# Loading work.top_module(fast)
+# Loading work.functional_unit(fast)
+# Loading work.i2c_interface(fast)
+# Loading work.memory_controller(fast)
+# Loading work.memory(fast)
+add wave -position insertpoint sim:/testbench_tb/*
+add wave -position insertpoint sim:/testbench_tb/DUT/*
+run -all
+# m=13, n=13, sel= 5, addr=67
+# Coverage for sel = 12.50 %
+# Time=                1164
+# Results of the functional unit:00000000
+# RW=1, Address : 0f, Data in the memory:00000000
+# m= 7, n= 3, sel= 0, addr=38
+# Time=                1980
+# Results of the functional unit:00001011
+# RW=1, Address : 14, Data in the memory:00000000
+# ** Note: $finish    : /u/anveshch/ECE571-F24/finalprj-team_10/RTL/maintb.sv(150)
+#    Time: 2072 ns  Iteration: 0  Instance: /testbench_tb
+# 1
+# Break in Module testbench_tb at /u/anveshch/ECE571-F24/finalprj-team_10/RTL/maintb.sv line 150
+# Break key hit
+quit -sim
+# End time: 23:47:02 on Dec 05,2024, Elapsed time: 0:01:00
+# Errors: 0, Warnings: 2

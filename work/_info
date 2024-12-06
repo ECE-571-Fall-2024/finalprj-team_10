@@ -1,221 +1,206 @@
 m255
 K4
 z2
-!s12c _opt1
 Z0 !s99 nomlopt
-!s12c _opt
 R0
-!s11f vlog 2024.2 2024.05, May 20 2024
+R0
+R0
+!s11f vlog 2021.3_1 2021.08, Aug 15 2021
 13
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
-Z1 d/u/alainaa/ECE571-F24/finalprjsv
+Z1 d/u/anveshch/ECE571-F24
 T_opt
-!s110 1733446710
-V^JDUG<EbHZIWYXjg5TCXK0
+!s110 1733443730
+VeTbJZ:lDDO7N5nEjT]6cE1
 Z2 04 12 4 work testbench_tb fast 0
-=1-525400b63b2a-67524c35-987a9-2d37
-R0
-Z3 !s12f OEM100
-Z4 !s12b OEM100
-Z5 !s124 OEM100
-Z6 !s135 nogc
-o-quiet -auto_acc_if_foreign -work work +acc
-Z7 tCvgOpt 0
+=1-525400b63b2a-67524092-3fcf4-44d6
+Z3 !s124 OEM100
+o-quiet -auto_acc_if_foreign -work work
+Z4 tCvgOpt 0
 n@_opt
-Z8 OL;O;2024.2;79
+Z5 OL;O;2021.3_1;73
 R1
 T_opt1
-!s110 1733467626
-V2TLXA`7YdD4eeoz9MBaHJ2
+!s110 1733470016
+VeeK``D^433@KznB]IX[E82
 R2
-=1-525400b63b2a-67529de9-ddf20-7296
-R0
+=1-525400b63b2a-6752a73f-85867-b5c
 R3
+o-quiet -auto_acc_if_foreign -work work +acc
 R4
-R5
-R6
-o-quiet -auto_acc_if_foreign -work work
-R7
 n@_opt1
-R8
+R5
 R1
 vfunctional_unit
-2functional_unit.sv
-Z9 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z10 !s110 1733467883
+Z6 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z7 !s110 1733471146
 !i10b 1
 !s100 fd]KZ=iAn<:eXGCIUj_5U0
-IP8V2e2MZ3GASG:ADUiWDb0
+I9iCT@Qnik23cWmR;Z?J`43
 S1
-R1
-Z11 w1733441177
-8functional_unit.sv
-Ffunctional_unit.sv
-!i122 14
-L0 1 33
-Z12 VDg1SIo80bB@j0V0VzS_@n1
-Z13 OL;L;2024.2;79
-r1
-!s85 0
-31
-!s108 1733467883.000000
-!s107 functional_unit.sv|
-!s90 -reportprogress|300|-lint|-source|functional_unit.sv|
-!i113 0
-Z14 o-lint -source -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R7
-vi2c_interface
-2i2c_interface.sv
-R9
-!s110 1733467884
-!i10b 1
-!s100 E8Mm:EaV4eE@aRWYLW_Pj2
-I1hZ@FdMb:TYGnF5AeZ]YN3
-S1
-R1
-w1733444736
-8i2c_interface.sv
-Fi2c_interface.sv
-!i122 15
-L0 1 144
-R12
-R13
-r1
-!s85 0
-31
-Z15 !s108 1733467884.000000
-!s107 i2c_interface.sv|
-!s90 -reportprogress|300|-lint|-source|i2c_interface.sv|
-!i113 0
-R14
-R7
-vmemory
-2memory.sv
-R9
-Z16 !s110 1733467885
-!i10b 1
-!s100 GTFHFB1[1Y]YiNClIilG>0
-Ifg6g9VRF03=ohISQNjoMW0
-S1
-R1
-w1733444792
-8memory.sv
-Fmemory.sv
-!i122 17
-L0 1 42
-R12
-R13
-r1
-!s85 0
-31
-!s108 1733467885.000000
-!s107 memory.sv|
-!s90 -reportprogress|300|-lint|-source|memory.sv|
-!i113 0
-R14
-R7
-vmemory_controller
-2memory_controller.sv
-R9
-!s110 1733467886
-!i10b 1
-!s100 nBW4jQP?g@cgPMlWD;KgK1
-IHzdNkBA7zQKaMCMCO9^zc0
-S1
-R1
-w1733444307
-8memory_controller.sv
-Fmemory_controller.sv
+Z8 d/u/anveshch/ECE571-F24/finalprj-team_10
+w1733433578
+8/u/anveshch/ECE571-F24/finalprj-team_10/RTL/functional_unit.sv
+F/u/anveshch/ECE571-F24/finalprj-team_10/RTL/functional_unit.sv
 !i122 18
-L0 1 119
-R12
-R13
+L0 1 33
+Z9 VDg1SIo80bB@j0V0VzS_@n1
+Z10 OL;L;2021.3_1;73
 r1
 !s85 0
 31
-!s108 1733467886.000000
-!s107 memory_controller.sv|
-!s90 -reportprogress|300|-lint|-source|memory_controller.sv|
+!s108 1733471145.000000
+!s107 /u/anveshch/ECE571-F24/finalprj-team_10/RTL/functional_unit.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/u/anveshch/ECE571-F24/finalprj-team_10/RTL/functional_unit.sv|
 !i113 0
-R14
+Z11 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+vi2c_interface
+R6
 R7
-Xrandom_value_pkg
-Z17 2maintb.sv
-R9
-R16
 !i10b 1
-!s100 W5K1K4foOOE3=WJOB6lQj3
-IaeD@zCd?bnm?n@b?F;Z?R2
+!s100 C`<WX>Fb_n41U>7][mf_E1
+Ig?ib1C>7>]:zRdTWC7Tdb1
 S1
-R1
-Z18 w1733444860
-Z19 8maintb.sv
-Z20 Fmaintb.sv
-!i122 16
-L0 1 0
-VaeD@zCd?bnm?n@b?F;Z?R2
-R13
-r1
-!s85 0
-31
-R15
-Z21 !s107 maintb.sv|
-Z22 !s90 -reportprogress|300|-lint|-source|maintb.sv|
-!i113 0
-R14
-R7
-vtestbench_tb
-R17
-R9
-DXx4 work 16 random_value_pkg 0 22 aeD@zCd?bnm?n@b?F;Z?R2
-R16
-!i10b 1
-!s100 EhcoY;bNlSjIMkEOWn<le3
-IZQ>MGi?232>M0@H>54]a;3
-S1
-R1
-R18
-R19
-R20
-!i122 16
-L0 14 139
-R12
-R13
-r1
-!s85 0
-31
-R15
-R21
-R22
-!i113 0
-R14
-R7
-vtop_module
-2top_module.sv
+R8
+w1733351680
+8/u/anveshch/ECE571-F24/finalprj-team_10/RTL/i2c_interface.sv
+F/u/anveshch/ECE571-F24/finalprj-team_10/RTL/i2c_interface.sv
+!i122 19
+L0 1 144
 R9
 R10
-!i10b 1
-!s100 I0bcKZLfi2ekY4QE8^19X3
-I;YkNg_X1d4hi?_BT`foMh0
-S1
-R1
-R11
-8top_module.sv
-Ftop_module.sv
-!i122 13
-L0 2 30
-R12
-R13
 r1
 !s85 0
 31
-!s108 1733467882.000000
-!s107 top_module.sv|
-!s90 -reportprogress|300|-lint|-source|top_module.sv|
+Z12 !s108 1733471146.000000
+!s107 /u/anveshch/ECE571-F24/finalprj-team_10/RTL/i2c_interface.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/u/anveshch/ECE571-F24/finalprj-team_10/RTL/i2c_interface.sv|
 !i113 0
-R14
+R11
+R4
+vmemory
+R6
 R7
+!i10b 1
+!s100 b_Phh6g;Ba2]eXL8V^df;1
+I`=OQhDR>DLz:lCUl`cCXh1
+S1
+R8
+w1733431520
+8/u/anveshch/ECE571-F24/finalprj-team_10/RTL/memory.sv
+F/u/anveshch/ECE571-F24/finalprj-team_10/RTL/memory.sv
+!i122 21
+L0 1 42
+R9
+R10
+r1
+!s85 0
+31
+R12
+!s107 /u/anveshch/ECE571-F24/finalprj-team_10/RTL/memory.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/u/anveshch/ECE571-F24/finalprj-team_10/RTL/memory.sv|
+!i113 0
+R11
+R4
+vmemory_controller
+R6
+R7
+!i10b 1
+!s100 @<ROES_Ra4XDX;P`=[MDO1
+IN:`807me]5@zoTHaV5e]j1
+S1
+R8
+w1733431657
+8/u/anveshch/ECE571-F24/finalprj-team_10/RTL/memory_controller.sv
+F/u/anveshch/ECE571-F24/finalprj-team_10/RTL/memory_controller.sv
+!i122 22
+L0 1 119
+R9
+R10
+r1
+!s85 0
+31
+R12
+!s107 /u/anveshch/ECE571-F24/finalprj-team_10/RTL/memory_controller.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/u/anveshch/ECE571-F24/finalprj-team_10/RTL/memory_controller.sv|
+!i113 0
+R11
+R4
+Xrandom_value_pkg
+R6
+R7
+!i10b 1
+!s100 W5K1K4foOOE3=WJOB6lQj3
+ISYdT>LGNdUhNOIEdlH`@k3
+S1
+R8
+Z13 w1733435192
+Z14 8/u/anveshch/ECE571-F24/finalprj-team_10/RTL/maintb.sv
+Z15 F/u/anveshch/ECE571-F24/finalprj-team_10/RTL/maintb.sv
+!i122 20
+L0 1 0
+VSYdT>LGNdUhNOIEdlH`@k3
+R10
+r1
+!s85 0
+31
+R12
+Z16 !s107 /u/anveshch/ECE571-F24/finalprj-team_10/RTL/maintb.sv|
+Z17 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/u/anveshch/ECE571-F24/finalprj-team_10/RTL/maintb.sv|
+!i113 0
+R11
+R4
+vtestbench_tb
+R6
+DXx4 work 16 random_value_pkg 0 22 SYdT>LGNdUhNOIEdlH`@k3
+R7
+!i10b 1
+!s100 EhcoY;bNlSjIMkEOWn<le3
+IkE17XHK<g^RPXF@Gl5j3Y3
+S1
+R8
+R13
+R14
+R15
+!i122 20
+L0 14 139
+R9
+R10
+r1
+!s85 0
+31
+R12
+R16
+R17
+!i113 0
+R11
+R4
+vtop_module
+R6
+!s110 1733471147
+!i10b 1
+!s100 I0bcKZLfi2ekY4QE8^19X3
+IlWij6865QM>J]@?]^hjom1
+S1
+R8
+w1733435195
+8/u/anveshch/ECE571-F24/finalprj-team_10/RTL/top_module.sv
+F/u/anveshch/ECE571-F24/finalprj-team_10/RTL/top_module.sv
+!i122 23
+L0 2 30
+R9
+R10
+r1
+!s85 0
+31
+R12
+!s107 /u/anveshch/ECE571-F24/finalprj-team_10/RTL/top_module.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/u/anveshch/ECE571-F24/finalprj-team_10/RTL/top_module.sv|
+!i113 0
+R11
+R4

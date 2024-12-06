@@ -1,6 +1,0 @@
-BEGIN 1:functional_unit:fast:work
-    out :  1:testbench_tb:fast:work
-END 
-BEGIN 1:memory:fast:work
-    mem :  1:testbench_tb:fast:work
-END 

@@ -12,7 +12,7 @@ input CLK,RST,ACK,RW_EN;
   output logic DONE;
 
 //internal variable declaration
-  logic SDA_EN;         
+  logic SDA_en;         
   
   logic SCL_temp,SDA_temp,SDA_temp_read;
   logic [7:0] R_data_t;
@@ -40,7 +40,7 @@ STATE_type STATE;
           IDLE:          
             begin
               DONE<=1'b0;
-              SDA_EN<=1'b1;
+              SDA_en<=1'b1;
               SCL_temp<=1'b1;
               SDA_temp<=1'b1;
               
@@ -109,7 +109,7 @@ STATE_type STATE;
           
           read_addr_ACK:begin
             STATE <= (ACK == 1'b1) ? read_data : read_addr_ACK;
-            SDA_EN <= (ACK == 1'b1) ? 1'b0 : SDA_EN;
+            SDA_en <= (ACK == 1'b1) ? 1'b0 : SDA_en;
           end
           
           read_data:begin
@@ -137,8 +137,9 @@ STATE_type STATE;
 // Assign clock and SDA line based on conditions
   assign SCL = ((STATE==write_start)||(STATE==write_stop)||(STATE==read_stop)) ? SCL_temp : CLK;
   
-  assign SDA = (SDA_EN == 1'b1) ? SDA_temp: 1'bz;
+  assign SDA = (SDA_en == 1'b1) ? SDA_temp: 1'bz;
 
   
   
 endmodule
+

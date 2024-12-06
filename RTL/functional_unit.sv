@@ -31,3 +31,4 @@ module functional_unit(out, m, n, sel);
     out = operations (m, n, sel); // Function call
   end
 endmodule
+
